@@ -1,0 +1,11 @@
+.block {
+    margin-top: 15px;
+}
+
+.block__list {
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+
+

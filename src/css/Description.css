@@ -1,0 +1,74 @@
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    background-color: #17212b;
+    height: max-content;
+    padding: 10px;
+    width: 420px;
+}
+
+.description__name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.description__description {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.description__releaseDate-container {
+    flex-direction: column;
+}
+
+.description__releaseDate-container, .description__platform-container, .description__developer-container {
+    margin-bottom: 10px;
+}
+
+.description__releaseDate-first, .description__platform-first, .description__genre-first, .description_developer-first, .description__publichers-first {
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.description__platform-container {
+    width: fit-content;
+}
+
+.description__releaseDate-first, .description__platform-first, .description__genre-first, .description_developer-first, .description__publichers-first {
+    margin-bottom: 5px;
+}
+
+.description__platform-second, .description__genre-second, .description_developer-second, .description__publichers-second, .description__releaseDate-second {
+    font-size: 15px;
+    background-color: #2b5278;
+    border-radius: 10px;
+    padding: 4px 8px;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #d0d0d0;
+    height: 20px;
+    width: fit-content;
+}
+
+.description__releaseDate-second {
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.description__platform-second:first-child, .description__genre-second:first-child, .description_developer-second:first-child, .description__publichers-second:first-child {
+    margin-left: unset;
+}
+
+.description__platform-second:last-child, .description__genre-second:last-child, .description_developer-second:last-child, .description__publichers-second:last-child {
+    margin-right: unset;
+}
+
+.description__genre-container, .description_developer-container, .description__publichers-container {
+    flex-wrap: wrap;
+}
+
+.description__genre-second {
+    margin-bottom: 10px;
+}
