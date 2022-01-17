@@ -1,2 +1,11 @@
-# avito-test-application
- 
+# Avito Test Application
+
+Версия для продакшена находится в папке build.
+
+Для запуска приложения необходимо открыть файл index.html в папке build.
+
+Для запуска исходных файлов необходимо прописать:
+
+$yarn
+
+$yarn start
