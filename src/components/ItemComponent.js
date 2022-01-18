@@ -1,4 +1,3 @@
-import ReactImageAppear from "react-image-appear";
 import React from "react";
 import '../css/ItemComponent.css';
 
@@ -16,10 +15,10 @@ const ItemComponent = (props) => {
                 document.getElementById("thumbnail-container").scrollTo({left: 0})
             }}
         >
-            <ReactImageAppear
+            <img
+                alt="GameCapsule"
                 src={el.images.capsule_231x87}
                 className="item__img"
-                animationDuration="0.5s"
             />
             <div className="item__desk">
                 <p className="item__name">

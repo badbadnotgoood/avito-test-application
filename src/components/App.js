@@ -13,8 +13,7 @@ const App = () => {
                     <Main clickFunc={setClick} itemFunc={setItem}/>
                 </div>
                 {click &&
-                <Description item={item}/>
-                }
+                <Description item={item}/>}
             </div>
         </>
     );
