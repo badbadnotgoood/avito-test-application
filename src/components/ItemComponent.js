@@ -11,8 +11,6 @@ const ItemComponent = (props) => {
             onClick={() => {
                 setClick(true);
                 setItem(el);
-                document.getElementById("thumbnail-container") &&
-                document.getElementById("thumbnail-container").scrollTo({left: 0})
             }}
         >
             <img

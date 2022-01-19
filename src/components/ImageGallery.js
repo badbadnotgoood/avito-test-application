@@ -1,11 +1,13 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import '../css/ImageGallery.css'
 
 const ImageGallery = (props) => {
     const item = props.item;
     const [originalImg, setOriginalImg] = useState(item.screenshots[0].path_full);
+    const thumbnailContainer = useRef();
     useEffect(() => {
         setOriginalImg(item.screenshots[0].path_full);
+        thumbnailContainer.current.scrollTo({left: 0});
     }, [item])
     let imgs = [];
     item.screenshots.forEach((el) => {
@@ -18,7 +20,7 @@ const ImageGallery = (props) => {
     return (
         <div className="description__img-container">
             <img className="description__original" src={originalImg} alt="Original Size"/>
-            <div className="description__thumbnail-container" id="thumbnail-container">
+            <div className="description__thumbnail-container" id="thumbnail-container" ref={thumbnailContainer}>
                 {imgs.map((el, i) => (
                     <img
                         key={i}
