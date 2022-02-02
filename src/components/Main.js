@@ -15,7 +15,6 @@ const Main = (props) => {
             .then((r) => {
                 setData(r.data.result);
                 setPageCount(Math.ceil(r.data.result.totalCount / 10))
-                console.log(r.data.result)
             });
     }, [page])
     return (
